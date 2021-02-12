@@ -116,7 +116,7 @@ function fizzBuzz() {
 // const output = reverseInt('54321');
 // const output = capitalizeLetters('I love jaVaScript');
 // const output = maxCharacter('javascript');
-const output = fizzBuzz();
+// const output = fizzBuzz();
 
 
 console.log(output);
