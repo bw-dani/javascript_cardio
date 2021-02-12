@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // CHALLENGE 1: REVERSE A STRING
 // Return a string in reverse
 // ex. reverseString('hello') === 'olleh'
@@ -238,7 +237,6 @@ function fizzBuzz() {
 const output = reverseString('hello');
 
 console.log(output);
-=======
 // CHALLENGE 1: REVERSE A STRING
 // Return a string in reverse
 // ex. reverseString('hello') === 'olleh'
@@ -412,4 +410,3 @@ function fizzBuzz() {
 const output = reverseString('hello');
 
 console.log(output);
->>>>>>> e8090fea1d9fe2c208a8f8ce4cc46be9f287b108
