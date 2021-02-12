@@ -30,12 +30,12 @@ function longestWord(sen) {
 // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 3) === [[1, 2, 3],[4, 5, 6],[7]]
 // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
 
-function chunkArray(arr, len) {
+function chunkArray(arr, len) {  //arr is the integers and len is the number out of the [] on the return
   // SOLUTION 1
 
   // // Init chunked arr
   // const chunkedArr = [];
-  // // Set index
+  // // Set index | where it starts 
   // let i = 0;
 
   // // Loop while index is less than the array length
@@ -75,12 +75,24 @@ function chunkArray(arr, len) {
 
 function flattenArray(arrays) {
   // SOLUTION 1
+  //reduce always take a function  a is the starting point b is each iteration 
+  //then we want to concate each time b pass
   // return arrays.reduce((a, b) => a.concat(b));
+
+
   // SOLUTION 2
+  // applies a function 
+  // return an empty array. then  concat anything to an array. apply takes an single array and pass all the arrays into one
   // return [].concat.apply([], arrays);
+
+
   // SOLUTION 3
+  // return an empty array. then concat the spread operator to return all the arguments into one array
   // return [].concat(...arrays);
+
+
   // SOLUTION 4
+  //
   return arrays.flat(Infinity);
 }
 
@@ -103,17 +115,17 @@ function  flatenArray(arr){
 // ex. 'Dormitory' === 'dirty room##'
 
 function isAnagram(str1, str2) {
-  return formatStr(str1) === formatStr(str2);
+  return formatStr(str1) === formatStr(str2); //check is they match or are a anagram
 }
 
 // Helper function
 function formatStr(str) {
   return str
-    .replace(/[^\w]/g, '')
+    .replace(/[^\w]/g, '') //takes in a expression and strip out anything that is not a letter or a num and replace with a empty string
     .toLowerCase()
-    .split('')
+    .split('') // each char into its own array value
     .sort()
-    .join('');
+    .join(''); //turn back into a string
 }
 
 //___________________________@missx7________________________
